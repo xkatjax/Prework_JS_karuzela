@@ -1,12 +1,30 @@
-let myFirstFunction = (name, greeting) =>
-{
-    console.log( greeting + "! Mam na imię " + name + "!");
+/* Zadanie - ZMIENNE 
+let C = 2;
+let M = 2;
+let E = M * C * C;
+console.log(E);
+*/
+
+/* Zadanie - OBIEKTY 
+let car1 = {
+    mark: "Fiat",
+    model: "Punto",
+    productionYear: 1999
 };
 
-myFirstFunction('Kasia', "Hejka");
-myFirstFunction('Olga', "Witam");
+let car2 = {
+    mark: "BMW",
+    model: "E90",
+    productionYear: 2013
+};
 
-/* Zadanie - FUNKCJE */
+console.log(car1.mark + ' ' + car1.model + ' ' + car1.productionYear);
+console.log(car2.mark + ' ' + car2.model + ' ' + car2.productionYear);
+*/
+
+
+
+/* Zadanie - FUNKCJE 
 // Zadanie 1
 let multiplicationByTwo = (number) =>
 {
@@ -33,3 +51,4 @@ let exponentiation = (number) =>
 exponentiation(2);
 exponentiation(5);
 exponentiation(11);
+*/

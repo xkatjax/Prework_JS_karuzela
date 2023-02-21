@@ -1,27 +1,3 @@
-/* Zadanie - ZMIENNE 
-let C = 2;
-let M = 2;
-let E = M * C * C;
-console.log(E);
-*/
-
-/* Zadanie - OBIEKTY 
-let car1 = {
-    mark: "Fiat",
-    model: "Punto",
-    productionYear: 1999
-};
-
-let car2 = {
-    mark: "BMW",
-    model: "E90",
-    productionYear: 2013
-};
-
-console.log(car1.mark + ' ' + car1.model + ' ' + car1.productionYear);
-console.log(car2.mark + ' ' + car2.model + ' ' + car2.productionYear);
-*/
-
 let arrowLeft = document.querySelector('.arrow-left');
 let arrowRight = document.querySelector('.arrow-right');
 
@@ -33,4 +9,28 @@ let slide1 = document.querySelector('#slide1');
 let slide2 = document.querySelector('#slide2');
 let salajd3 = document.querySelector('#slide3');
 
-dot2.addEventListener("click");
+
+let showSlide1 = () =>
+{
+    let activeElement = document.querySelector('.active');
+    activeElement.classList.remove('active');
+    slide1.classList.add('active');
+}
+
+let showSlide2 = () =>
+{    
+    let activeElement = document.querySelector('.active');
+    activeElement.classList.remove('active');
+    slide2.classList.add('active');
+}
+
+let showSlide3 = () =>
+{
+    let activeElement = document.querySelector('.active');
+    activeElement.classList.remove('active');
+    slide3.classList.add('active');
+}
+
+dot1.addEventListener("click", showSlide1);
+dot2.addEventListener("click", showSlide2);
+dot3.addEventListener("click", showSlide3);
