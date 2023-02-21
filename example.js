@@ -52,3 +52,16 @@ exponentiation(2);
 exponentiation(5);
 exponentiation(11);
 */
+
+let isBiggerThen10 = (number) =>
+{
+    if(number > 10){
+        console.log('Gryffindor!');
+    }
+    else{
+        console.log('Slytherin :( ');
+    }
+    
+};
+
+isBiggerThen10(5);
