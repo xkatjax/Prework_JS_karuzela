@@ -53,6 +53,7 @@ exponentiation(5);
 exponentiation(11);
 */
 
+/*
 let isBiggerThen10 = (number) =>
 {
     if(number > 10){
@@ -65,3 +66,40 @@ let isBiggerThen10 = (number) =>
 };
 
 isBiggerThen10(5);
+*/
+
+/*
+let pi = 3.14;
+let circleLength = (radius) =>
+{
+    console.log(radius * 2 * pi);
+};
+
+for (let i=1; i<=20; i++)
+{
+    circleLength(i);
+}
+*/
+
+/*Zadanie - Operatory i funkcje warunkowe
+let divide = (number1, number2) =>
+{
+    if (number2 === 0)
+        console.log("Operacja niedozwolona")
+    else
+    console.log(number2 / number1);
+};
+
+divide(2, 6);
+*/
+
+//Zadanie - Pętla FOR
+let nOddNumbers = (n) =>
+{
+    for (let i=1; i <= n; i++)
+    {
+        console.log(2*i-1);
+    }
+};
+
+nOddNumbers(5);
