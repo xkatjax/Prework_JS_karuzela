@@ -70,9 +70,15 @@ let showSlide3 = () =>
     showSlide(3);
 }
 
-dot1.addEventListener("click", showSlide1);
-dot2.addEventListener("click", showSlide2);
-dot3.addEventListener("click", showSlide3);
+for (let i=1; i <= 3; i++)
+{   
+    let showSlideI = () =>
+    {
+        activeSlideNumber = i;
+        showSlide(i);
+    }
+    document.querySelector('#dot'+i).addEventListener('click', showSlideI)
+};
 
 arrowRight.addEventListener('click', showNextSlide);
 arrowLeft.addEventListener("click", showPreviousSlide);
